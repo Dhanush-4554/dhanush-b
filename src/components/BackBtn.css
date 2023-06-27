@@ -1,0 +1,15 @@
+.backBtn{
+    margin: 0;
+    padding: 6px;
+    color: #cacaca;
+    background-color: transparent;
+    cursor: pointer;
+    position: absolute;
+    right: 100px;
+    top: 10px;
+}
+@media (max-width: 950px){
+    .backBtn{
+        right: 20px;
+    }
+}

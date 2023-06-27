@@ -1,0 +1,88 @@
+@import url('https://fonts.googleapis.com/css2?family=Belleza&family=Oswald&display=swap');
+/* font-family: 'Belleza', sans-serif;
+font-family: 'Oswald', sans-serif; */
+.logo1{
+    display: none;
+}
+
+.navbar{
+    background: linear-gradient(#000000, rgb(26, 26, 26));
+    height: 100px;
+    display: flex;
+    align-items: center;
+    font-family: 'Belleza', sans-serif;
+}
+
+
+
+/* logo  */
+.nav_left{
+    width: 25vw;
+    align-items: center;
+}
+.logo{
+    align-items: center;
+    margin: 0 70px;
+    height: 65px;
+    border: 2px solid white;
+    border-radius: 50%;
+    animation: revolve 7s infinite;
+    cursor: pointer;
+}
+
+@keyframes revolve {
+    50%{transform:rotate(360deg)}
+}
+
+
+/* nav components design  */
+.nav_right{
+    display: flex;
+    align-items: center;
+}
+.nav_component{
+    align-items: center;
+    color: #e1dfdd;
+    font-size: 22px;
+    margin: 0 2vw;
+    cursor: pointer;
+    padding: 0.1vw 0.5vw;
+    border-radius: 5px;
+}
+.nav_component:hover{
+    animation: run 1.5s ;
+    background-color: #e1dfdd;
+    color: #000000;
+}
+.nav_component:focus{
+    color: rgb(177, 177, 177);
+}
+@keyframes run {
+    0%{
+        transform: translateY();
+        color: white;
+        background-color: #000000;
+    }
+    100%{
+        transform: translateY();
+        color: #000000;
+        background-color: #e1dfdd;
+    }
+}
+
+
+@media (max-width:900px){
+    .navbar{
+        display: none;
+    }
+    .logo1{
+        display: block;
+        align-items: center;
+        margin: 30px 2vw 10px 70px;
+        height: 15vw;
+        border: 2px solid white;
+        border-radius: 50%;
+        cursor: pointer;
+    }
+}
+

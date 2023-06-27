@@ -1,0 +1,124 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Belleza&family=Familjen+Grotesk&family=Nunito+Sans:ital,wght@0,400;1,200&display=swap');
+
+/* font-family: 'Anton', sans-serif;
+font-family: 'Belleza', sans-serif;
+font-family: 'Familjen Grotesk', sans-serif;
+font-family: 'Nunito Sans', sans-serif; */
+
+
+.experience{
+    display: flex;
+    margin: 50px 20px;
+    color: #F4F1EB;
+    overflow: hidden;
+ 
+}
+@keyframes slide {
+    0%{
+        transform: translateX(-500px);
+        
+    }
+    100%{
+        transform: translateX(0px);
+        
+    }
+}
+.exp_left{
+    width: 25%;
+    animation: slide 1s linear;
+}
+.exp_left h1{
+    display: block;
+    text-align: center;
+    margin:  0;
+    font-family: 'Familjen Grotesk', sans-serif;
+    font-size: 42px;
+}
+.exp_right{
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.exp_row{
+    display: flex;
+    margin: 20px 0;
+}
+.exp_col1{
+    align-items: center;
+    width: 30%;
+}
+.exp_col1 p{
+    font-size: 16px;
+    margin: 5px;
+}
+.exp_col2{
+    width: 70%;
+    margin: 0 50px;
+    align-items: center;
+}
+.exp_col2 h2{
+    color: #B2B2B2;
+}
+.exp_col2_p1{
+    font-size: 15.6px;
+    margin-bottom: 6px;
+}
+.exp_col2_p2{
+    font-size: 15.6px;
+    margin-bottom: 6px;
+}
+
+
+
+
+
+
+
+
+@media (max-width: 1000px){
+    .experience{
+        flex-direction: column;
+        align-items: center;
+    }
+    .exp_left h1{
+        margin-bottom: 20px;
+    }
+    .exp_right{
+        width: 100%;
+        margin:  0 auto;
+        padding: 0 40px;
+    }
+}
+@media (max-width: 550px){
+    .exp_left{
+        margin: 0;
+        width: auto;
+    }
+    .experience{
+        width: auto;
+        padding: 0;
+        margin: 20px;
+    }
+    .exp_left h1{
+        width: 100%;
+        font-size: 35px;
+        margin: 0 ;
+        padding: 0;
+        margin-bottom: 20px;
+    }
+    .exp_right{
+        margin: 0px;
+        padding: 10px;
+    }
+    .exp_row{
+        flex-direction: column;
+        padding-bottom: 10px;
+        border-bottom: 1px solid #6c6c6c;
+    }
+    .exp_col1{
+        margin-bottom: 20px;
+    }
+    .exp_col2{
+        margin-left: 10px;
+    }
+}

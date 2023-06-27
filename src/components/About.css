@@ -1,0 +1,103 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Belleza&family=Nunito+Sans:ital,wght@0,400;1,200&display=swap');
+
+
+.about{
+    background-color: #2C2B2A;
+    background: url('./images/background.png');
+    background-size: cover;
+    background-position: left;
+    background-repeat: no-repeat;
+    padding: 25px;
+    margin-bottom: 70px;
+    padding-bottom: 100px;
+}
+
+.Intro {
+    width: 60%;
+    display: flex;
+    margin: 21vh auto;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 30px;
+}
+
+.Intro h1 {
+    font-size: 5vw;
+    font-family: 'Anton', sans-serif;
+    font-weight: 200;
+    color: #e1dfdd;
+}
+
+.Intro2 {
+    width: 60%;
+    margin: 0 auto;
+    color: #e1dfdd;
+    font-size: 22px;
+    padding: 10px;
+}
+
+.knowMoreBtn {
+    font-size: 30px;
+    margin-top: 50px;
+    padding: 0 5px;
+    background-color: #ece9e5;
+    color: #2C2B2A;
+    cursor: pointer;
+    border-radius: 4px;
+    background: url('#filter');
+    color: #e1dfdd;
+    padding: 10px;
+}
+
+.knowMoreBtn:hover {
+    scale: 1.05;
+    transition: 0.2s;
+
+}
+.smoke{
+    display: none;
+}
+@media (max-width: 570px) {
+    .about {
+        background: none;
+        background-color: #2c2c26;
+    }
+
+    .Intro {
+        width: 75%;
+        margin-top: 0px;
+    }
+
+    .Intro h1 {
+        font-size: 30px;
+    }
+
+    .Intro2 {
+        width: 70%;
+        font-size: 15px;
+    }
+
+    .knowMoreBtn {
+        font-size: 18px;
+        background: url('#filter');
+        color: #e1dfdd;
+        padding: 10px;
+    }
+
+    .smoke {
+        display: block;
+        filter: url('#filter');
+        height: 200px;
+        padding-top: 30px;
+    }
+    
+    .text {
+        background: linear-gradient(#fff, #999, #ddd, #888);
+        background-clip: text;
+        filter: blur(5px) contrast(100%);
+        color: #ece9e5;
+        font-size: 100px;
+        text-align: center;
+    }
+}
+
