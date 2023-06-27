@@ -1,2 +1,2 @@
-# dhanush-b
+# DHANUSH B
 THIS IS MY PORTFOLIO WEBSITE
